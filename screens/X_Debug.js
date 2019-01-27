@@ -37,13 +37,13 @@ class X_Debug extends Component {
 
    async handleAddDefaultData () {
      let disciplines = [['Discipline1', JSON.stringify({name: 'Cycling'})],
-     ['Discipline2', JSON.stringify({name: 'Running'})]];
+     ['Discipline22', JSON.stringify({name: 'Running'})]];
      AsyncStorage.multiSet(disciplines);
 
      let subDisciplines = [['SubDiscipline1_1', JSON.stringify({name: 'Road'})],
-           ['SubDiscipline2_1', JSON.stringify({name: 'MTB'})],
-           ['SubDiscipline3_1', JSON.stringify({name: 'Downhill'})],
-           ['SubDiscipline1_2', JSON.stringify({name: 'Road'})],
+           ['SubDiscipline1_2', JSON.stringify({name: 'MTB'})],
+           ['SubDiscipline1_3', JSON.stringify({name: 'Downhill'})],
+           ['SubDiscipline2_1', JSON.stringify({name: 'Road'})],
            ['SubDiscipline2_2', JSON.stringify({name: 'Trail'})]];
      AsyncStorage.multiSet(subDisciplines);
 
@@ -111,8 +111,8 @@ class X_Debug extends Component {
         return element.substr(0,10) == 'Discipline' || element.substr(0,13) == 'SubDiscipline';
       });
       if (!found) {
-        Alert.alert('Adding default data...');
-        return this.handleAddDefaultData();
+        //Alert.alert('Adding default data...');
+        //return this.handleAddDefaultData();
       }
       else {
         keys.forEach(async function(inKey) {
