@@ -33,8 +33,7 @@ export class Events extends Component {
     try {
       let value = await AsyncStorage.getItem('Athlete1');
       if (value !== null) {
-        this.setState({textAthleteName: JSON.parse(value).name});
-        this.setState({isAthleteCreated: true});
+        this.setState({textAthleteName: JSON.parse(value).name, isAthleteCreated: true});
       } else {
         this.setState({isAthleteCreated: false});
       }

@@ -93,6 +93,7 @@ class Athlete extends Component {
                                   birthDate: _birthDate,
                                   otherStuff: _otherStuff}});
         let Athlete1_object = {
+           key: 'Athlete1',
            name: _name,
            birthDate: _birthDate,
            otherStuff: {s1: _otherStuff},

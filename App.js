@@ -18,7 +18,7 @@ export default createAppContainer(createMaterialTopTabNavigator(
     X_Debug: { screen: X_DebugScreen },
   },
   {
-    initialRouteName: 'Statistics',
+    initialRouteName: 'X_Debug',
     tabBarPosition: 'bottom',
     swipeEnabled: true,
     animationEnabled: true,
